@@ -4,7 +4,7 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 
 ## Table of Contents:
 
-* Class 01: [Node Ecosystem, TDD, CI/CD](https://penjoe.github.io/401-reading-notes/class01)
+* Class 01: [Node Ecosystem, TDD, CI/CD](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/class01)
 * Class 02: [TBD](class02.md)
 * Class 03: [TBD](class03.md)
 * Class 04: [TBD](class04.md)

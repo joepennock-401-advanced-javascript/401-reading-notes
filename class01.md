@@ -1,4 +1,4 @@
-[Table of Contents](https://penjoe.github.io/401-reading-notes/)
+[Table of Contents](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/)
 
 # Reading, Research and Discussion
 

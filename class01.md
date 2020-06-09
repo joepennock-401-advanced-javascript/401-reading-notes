@@ -1,8 +1,8 @@
 [Table of Contents](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/)
 
-# Reading, Research and Discussion
+# Node Ecosystem, TDD, CI/CD
 
-## Reading Questions:
+## Research Questions:
 
 1. Why would you want to run JavaScript code outside of a browser?
 
@@ -26,7 +26,8 @@
       * Use outside expertise to bolster your code
       * Save and recycle your own code via packages
 
-4. Provide code snippets showing 3 different ways to export a function from a node module
+4. Provide code snippets showing 3 different ways to export a function from a node module:
+
     1. Requiring an npm mudule:
     
     ```
@@ -55,18 +56,18 @@
     3. Using the exports shortcut:
 
     ```
-      Inside a file called helloWorld.js:
+    Inside a file called helloWorld.js:
 
-        module.exports = exports = function() {
-          console.log('Hello World!');
-        }
+      module.exports = exports = function() {
+        console.log('Hello World!');
+      }
 
-      Then, inside of index.js:
+    Then, inside of index.js:
 
-        const helloWorld = require('./helloWorld.js');
+      const helloWorld = require('./helloWorld.js');
         helloWorld(); 
 
-      invoking the function inside of index.js should print 'Hello World!' to the console.
+    Invoking the function inside of index.js should print 'Hello World!' to the console.
     ```
 
 ## Vocabulary:

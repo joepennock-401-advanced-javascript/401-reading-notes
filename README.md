@@ -7,7 +7,7 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 * Class 01: [Node Ecosystem, TDD, CI/CD](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/class01)
 * Class 02: [Classes, Inheritance, Functional Programming](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/class02)
 * Class 03: [Data Modeling & NoSQL Databases](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/class03)
-* Class 04: [TBD](class04.md)
+* Class 04: [Advanced Mongo/Mongoose](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/class04)
 * Class 05: [TBD](class05.md)
 * Class 06: [TBD](class06.md)
 * Class 07: [TBD](class07.md)

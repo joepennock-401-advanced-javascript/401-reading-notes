@@ -48,7 +48,7 @@
 * **higher-order function** - A function that operates on another function. 
 * **immutable state** - A state, which can refer to objects, arrays etc., that can not be modified after it is created.
 * **object** - A data type in JavaScript that is used to easily store data in key:value pairs.
-* **object-oriented programming (OOP)** - 
+* **object-oriented programming (OOP)** - A programming paradigm built around the use of `objects`. These `objects` are data structures that can be used to hold data as well as actual functioning code. 
 * **class** - An ES6 replacement to the Constructor function, Classes effectively do the same thing as Constructor functions in a more readable, easier to write way. 
 * **prototype** - A method, that is not stand alone, built on to the parent Constructor or function.
 * **super** - A keyword in JavaScript that is used to access and call functions on an object's parent. [source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)

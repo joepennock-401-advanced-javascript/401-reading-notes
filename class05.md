@@ -1,4 +1,4 @@
-[Table of Contents](https://joepennock-401-advanced-javascript.github.io/401-reading-notes/)
+[Table of Contents](README.md)
 
 # Linked Lists
 

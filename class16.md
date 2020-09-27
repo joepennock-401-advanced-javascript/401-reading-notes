@@ -1,6 +1,6 @@
 [Table of Contents](README.md)
 
-# Access Control
+# Event Driven Applications
 
 ## Review, Research and Discussion:
 
@@ -18,39 +18,40 @@
 
 4. Why is role based access control more scalable than discretionary or mandatory access control?
 
+    The reason RBAC is more scalable than MAC or DAC is because there is no limit to the amount of roles that can be set for the ACL. Roles can be created as need to allow access to any combination of pieces of an API server. These roles can then be set to the appropriate users and updated/changed as necessary.
+
+    DAC is more used when allowing each individual user to manage the content they own. As such, DAC is limited to the scope of each individual user. 
+
+    MAC is more for sytem level access. Such as limiting access to core components of a system or a server. Using MAC, set a root system admin account and give it root permissions. Then, no matter what roles a user may have, only the root system admin account would be able to access content on the root of a system.
+
+    With RBAC, there is flexibility to grow and add roles as needed and user that need that flexibility won't be locked out as new content is added to the system.
+
 ## Vocabulary:
 
-* `Authorization` -  
-* `Role Based Access Control` - 
-* `Capabilities` - 
+* `Authorization` - If authentication is confirming you are who you say you are, then authentication would be saying yoy can do these things now that we have confirmed your identity. Authorization is what RBAC allows. 
+* `Role Based Access Control` - RBAC is an access control paradigm in system securty that sets various roles in an Access Control List, or ACL. The roles in the ACL are then assigned to users depending on what permissions those users need. 
+* `Capabilities` - Capabilites are the permission granted to a user based on their role. For example, an admin role may have the capabilities to `create`, `read`, `update` and `delete` where a guest role may only have the capability to `read`. 
 
 
 ## Preview: 
 
-1. Which 3 things had you heard about previously and now have better clarity on?
+1. What is something had you heard about previously and now have better clarity on?
 
-    1. .
-    2. .
-    3. .
+    1. Event-Driven Programming. I had heard of the concept back in 301 but knew of it only vaguely from reading about jQuery event listeners. Now I realize that it's much more of an approach to programming itself, or rather a programming style than I had realized just from using `$('foo).on('click', callBAck)` and such from 301.
 
-2. Which 3 things are you hoping to learn more about in the upcoming lecture/demo?
+2. What are some things are you hoping to learn more about in the upcoming lecture/demo?
 
-    1. .
-    2. .
-    3. .
+    1. The `Main Loop`.
+    2. Creating real-time event listeners froms scratch.
 
 3. What are you most excited about trying to implement or see how it works?
 
-    1. .
-    2. .
-    3. .
-
-## Sources:
-
-* Video: [Role Based Access Control](https://www.youtube.com/watch?v=C4NP8Eon3cA)
-* Article: [5 steps to simple role-based access control](https://www.csoonline.com/article/3060780/5-steps-to-simple-role-based-access-control.html)
-- Wikipedia: [Role-based access control](https://en.wikipedia.org/wiki/Role-based_access_control)
+    1. Creating my own event listeners
+    2. Having listeners dynaically handle events in real time and relay those events to other handlers. Essentially, have events "talk" to each other. 
 
 ## Additional Resources:
 
-* Article: []()
+* Article: [Event-Driven Programming in Node.js](https://www.digitalocean.com/community/tutorials/nodejs-event-driven-programming)
+* Documentation: [Node.js v14.12.0 Documentation](https://nodejs.org/api/events.html)
+* Article: [MAC vs DAC vs RBAC](http://www.cloudauditcontrols.com/2014/09/mac-vs-dac-vs-rbac.html#:~:text=Discretionary%20Access%20Controls%20(DAC)%20and,of%20permissions%20to%20those%20groups.)
+* StackExchange: [MAC vs DAC vs RBAC](https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac)

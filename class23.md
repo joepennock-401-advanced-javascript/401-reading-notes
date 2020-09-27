@@ -45,11 +45,7 @@
     1. .
     2. .
     3. .
-
-## Sources:
-
-* Artile: []()
-
+    
 ## Additional Resources:
 
 * Article: []()

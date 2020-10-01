@@ -20,7 +20,7 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 * Class 14: [TBD](class14.md)
 * Class 15: [TBD](class15.md)
 * Class 16: [Event Driven Applications](class16.md)
-* Class 17: [TBD](class17.md)
+* Class 17: [TCP Servers](class17.md)
 * Class 18: [TBD](class18.md)
 * Class 19: [TBD](class19.md)
 * Class 20: [TBD](class20.md)

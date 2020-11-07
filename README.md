@@ -31,6 +31,6 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 * Class 25: [TBD](class25.md)
 * Class 26: [TBD](class26.md)
 * Class 27: [React: Props and State](class27.md)
-* Class 28: [TBD](class28.md)
+* Class 28: [Component Composition](class28.md)
 * Class 29: [TBD](class29.md)
 * Class 30: [TBD](class30.md)

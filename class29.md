@@ -1,30 +1,51 @@
 [Table of Contents](README.md)
 
-# Hash Tables
+# React Routing
 
 ## Review, Research and Discussion:
 
-What are hash tables? Hash tables are a way to store data inside of an array and be able to retireve that data with an O(1) time complexity. Unlike simply looping through an array to see if a value exists, hash tables are made up of key value pairs and the key is used to instantly go right to the index that contains the value. One of the traits of a hash table is that the array that it is assiciated with has to have a predetermined size. The reason for this will be addressed below.
+1. Do child components have direct access to props/state from the parent?
 
-Inside of each index of the hash tables array are what we call buckets. These buckets are able to store more than one key value pair. While a perfect hash table has one one pair per bucket, it's not bad for a bucket to have multiple pairs. When more than one pair is assigned to the same bucket, we call this a collision. To make the handling of collisions easier, the inside of a bucket is made up of a linked list so that each time a pair is placed in a bucket, it is appended to the end of the linked list. So if you know the key of the value you are looking for, you can get the hash of the key which will point directly to the index in the array where the value is stored. Now you're probably asking what a hash is.
+    Child components do not have direct access to the props or state of the parent component. In order for the child component to read or update the state of the parent, the child either needs to be passed a method for accessing the state from the parent or have the parent's state passed in as props to the child. The former will allow the child to update the state of the parent component. The latter will just give the child component read access. 
 
-A hash is simply a ket in the form of a string that is run through an algorithm that returns a number. The number is then used as the index for the key value pair to be stored. The hash can be calculated many different ways so long as the resulting index value is within the length of the array. This is the reason that a hash tables array needs a set length. 
+2. When a component “wraps” another component, how does the child component’s output get rendered?
 
-A hash table has four primary internal methods:
--  `add()` - Adds a key value pair hashing the key and then storing the whole key value pair into the index that was determined by the hash.
-- `find()` - Gets the hash of the key to determine which index of the array to go to and then uses the key to assert that the value is there and returns it. In the case that the bucket containinf the key is a linked list, meaning the bucket has mulitple key value pairs, the `find()` method will also iterate the linked list to get the correct pair.
-- `contains()` - Gets the hash of the key to determine which index of the array to look in. Checks to see if the bucket contains the key value pair that corresponds to the provided hashed key and returns a boolena value.
-- `getHash()` - Takes a key, which will be a string, and runs it thorugh an algorithm that reuurns a number that will corresponf to a soecific index of te hash tables array.
+    When a component is wrapped in another component, the children of the component getting wrapped are rendered in the wrapper.
+
+3. Can a component, such as <Content />, which is a child also be used as a standalone component elsewhere in the application?
+
+    All components in React can be considered standalone components. Thus, any child component that was created and rendered in a parent component can also be imported and used elsewhere. The only consideration would need to be if the child component has props from the parent required to make it work. But ideally, all components should be created in such a way that they can be reused anywhere in an application that makes sense.
+
+4. What trick can a parent use to share all props with it’s children
+
+    Inside of the render of the parent component, you can simply send props.children to the child component. Props.children are whatever is inside the JSX tags when rendering out a component.
 
 ## Vocabulary:
 
-* `Hash` - A hash is the result of some algorithm taking an incoming string and converting it into a value that could be used for either security or some other purpose. In the case of a hashtable, it is used to determine the index of the array.  
-* `Buckets` - A bucket is what is contained in each index of the array of the hashtable. Each index is a bucket. An index could potentially contain multiple key/value pairs if a collision occurs.
-* `Collisions` - A collision is what happens when more than one key gets hashed to the same location of the hashtable.
+* `props.children` - these are used to display whatever is put inside if the opening/closing tags of a component when rendering it.
+* `composition` - the practice of building components from other components.
+
+## Preview: 
+
+1. What are some things had you heard about previously and now have better clarity on?
+
+    1. Using `this.props.children`. I've seen it referenced and used in lots of tutorials and examples, and now I am finally starting to grasp what it is and how it's used.
+    2. ReactRouter and how it is used to help with browser routing in a single page application.
+
+2. What are some things are you hoping to learn more about in the upcoming lecture/demo?
+
+    1. I'd like to learn more about using the ReactRouter.
+    2. Learnign more about and how to better use `props.children`.
+
+3. What are you most excited about trying to implement or see how it works?
+
+    1. ReactRouter!
 
 ## Additional Resources:
 
-* Article: [Hashtables](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html)
-* Video: [What is a HashTable Data Structure - Introduction to Hash Tables , Part 0](https://www.youtube.com/watch?v=MfhjkfocRR0)
-* Article: [Basics of Hash Tables](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/)
-* Wikipedia: [Hash table](https://en.wikipedia.org/wiki/Hash_table)
+* Documentation: [React Router](https://reactrouter.com/web/api)
+* Documentation: [React-If](https://www.npmjs.com/package/react-if)
+* Documentation: [React Testing Library: Queries](https://testing-library.com/docs/dom-testing-library/api-queries/)
+* Documentation: [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+<!-- * Article: []() -->
+

@@ -32,5 +32,6 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 * Class 26: [TBD](class26.md)
 * Class 27: [React: Props and State](class27.md)
 * Class 28: [Component Composition](class28.md)
-* Class 29: [Hash Tables](class29.md)
+* Class 29: [React Routing](class29.md)
+* DS&A: [Hash Tables](hashtables.md)
 * Class 30: [TBD](class30.md)

@@ -35,3 +35,4 @@ This is a collection of reading notes from the Code Fellows 401 Full-Stack Advan
 * Class 29: [React Routing](class29.md)
 * DS&A: [Hash Tables](hashtables.md)
 * Class 30: [TBD](class30.md)
+* Class 31: [React Hooks API](class31.md)
